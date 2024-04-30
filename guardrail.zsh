@@ -8,6 +8,8 @@ add-zsh-hook chpwd do-ls
 
 dco_tag="-s"
 cwd=$(pwd)
+cwd=${cwd:l}
+
 opensearch="opensearch"
 
 add-dco-for-git-commit() { 
